@@ -16,12 +16,10 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-// Route::resource('products','ProductController');
-
 // List products
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 
-// List products
+// Filter products
 Route::post('/productsFilter', [ProductController::class, 'Filter'])->name('products.Filter');
 
 // List single products
